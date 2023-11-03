@@ -1,0 +1,15 @@
+#!/bin/bash
+
+PARSERGEN="../../libparser/build/parsergen";
+OUTPUT_FOLDER=src
+
+UCC_ASM=$OUTPUT_FOLDER/UccAsmBuffer
+
+echo "Generating Assembly parser..."
+CMD="$PARSERGEN -s ucc_asm.bnf -o $UCC_ASM -v ucc_asm_buffer"
+if [ $SHOWCMD ]; then
+	echo $CMD;
+fi
+$CMD
+
+echo "Done"

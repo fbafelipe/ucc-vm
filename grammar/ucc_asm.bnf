@@ -1,0 +1,26 @@
+ignore <COMMENT> ::= ";[^\n]*";
+
+<TEXT> ::= ".TEXT";
+<DATA> ::= ".DATA";
+
+<REGISTER> ::= "$\w(\w|\d)*";
+
+<LABEL> ::= "\w(\w|\d)*:";
+
+<IDENTIFIER> ::= "\w(\w|\d)*";
+
+<RELOCABLE> ::= "\*";
+
+<HEXA> ::= "0x\H\H";
+<CHAR> ::= "\'([^\\])|(\\.)\'";
+<STRING> ::= "\"[^\"]*\"";
+
+<INTEGER> ::= "-?\d+";
+<FLOAT> ::= "-?\d+\.\d+f";
+
+<BEGIN> ::= "{";
+<END> ::= "}";
+
+<COMMA> ::= ",";
+
+ignore <WHITESPACE> ::= "\s+";
