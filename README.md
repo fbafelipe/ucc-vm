@@ -1,5 +1,8 @@
 # ucc-vm
 
+<p>ucc-vm is a very simple virtual machine for running programs (built for this VM). It interprets and run a very simple assembly.</p>
+<p>This repositoy is part of a project I developed in 2009 when building a C compiler for my Compiler class at college. To run it you will need all three repositories: ucc, ucc-vm, and libparser.</p>
+
 # Building ucc-vm
 
 To build ucc-vm you will need CMake (http://www.cmake.org) building system
